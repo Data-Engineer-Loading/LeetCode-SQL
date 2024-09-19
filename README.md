@@ -15,3 +15,19 @@ WHERE
 ```
 
 ---
+
+### [Find Customer Referee](https://leetcode.com/problems/find-customer-referee/submissions/1394346205/?envType=study-plan-v2&envId=top-sql-50)
+
+Goal : **find the names of the customers that are not referred by the customer with id = 2**\
+Topics : **filter**
+```sql
+SELECT
+    c.name
+FROM
+    customer c
+WHERE
+    c.referee_id != 2
+    OR c.referee_id IS NULL;
+```
+
+---
