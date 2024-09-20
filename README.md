@@ -50,3 +50,18 @@ WHERE
 ```
 
 ---
+
+### [Article Views I](https://leetcode.com/problems/article-views-i/submissions/?envType=study-plan-v2&envId=top-sql-50)
+
+Goal : **find all the authors that viewed at least one of their own articles**\
+Topics : **filter, distinct**
+```sql
+SELECT
+    DISTINCT v.author_id AS id
+FROM
+    views v
+WHERE
+    v.author_id = v.viewer_id;
+```
+
+---
