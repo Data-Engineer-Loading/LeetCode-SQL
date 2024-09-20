@@ -80,3 +80,20 @@ WHERE
 ```
 
 ---
+
+### [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/description/?envType=study-plan-v2&envId=top-sql-50)
+
+Goal : **show the unique ID of each user - null if no unique ID exists**\
+Topics : **join**
+```sql
+SELECT
+    eu.unique_id,
+    e.name
+FROM
+    employees e
+LEFT JOIN
+    employeeuni eu
+        ON e.id = eu.id;
+```
+
+---
