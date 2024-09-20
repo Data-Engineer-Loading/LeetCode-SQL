@@ -97,3 +97,21 @@ LEFT JOIN
 ```
 
 ---
+
+### [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50)
+
+Goal : **report the `product_name`, `year`, and `price` for each `sale_id` in the `Sales` table**\
+Topics : **join**
+```sql
+SELECT
+    product_name,
+    year,
+    price
+FROM
+product p
+INNER JOIN
+sales s
+    ON p.product_id = s.product_id;
+```
+
+---
