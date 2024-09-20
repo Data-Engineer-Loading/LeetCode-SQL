@@ -65,3 +65,18 @@ WHERE
 ```
 
 ---
+
+### [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
+
+Goal : **find the IDs of the invalid - nulber of characters in content is greater than 15 - tweets**\
+Topics : **filter, string function**
+```sql
+SELECT
+    t.tweet_id
+FROM
+    tweets t
+WHERE
+    LENGTH(t.content) > 15;
+```
+
+---
