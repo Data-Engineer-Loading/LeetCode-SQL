@@ -108,10 +108,12 @@ SELECT
     year,
     price
 FROM
-product p
+    product p
 INNER JOIN
-sales s
-    ON p.product_id = s.product_id;
+    sales s
+        ON p.product_id = s.product_id;
 ```
 
 ---
+
+
